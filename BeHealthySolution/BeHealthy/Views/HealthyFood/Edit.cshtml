@@ -1,0 +1,11 @@
+﻿@model BeHealthy.Controllers.Food
+
+<h2>Edit Food</h2>
+<form action="" method="post">
+    Name: @Html.EditorFor(c => c.Name)<br/>
+    Code: @Html.EditorFor(c => c.Code)<br/>
+    CaloriesPerKG: @Html.EditorFor(c => c.CaloriesPerKg)<br/>
+    <input type="submit" value="Edit"/>
+
+</form>
+@Html.ActionLink("Back to All Food","Index")

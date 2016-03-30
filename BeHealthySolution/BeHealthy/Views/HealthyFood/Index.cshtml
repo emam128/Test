@@ -1,0 +1,30 @@
+﻿@model IEnumerable<BeHealthy.Controllers.Food>
+<h1>All Our Helathy Food</h1>
+<h2>Create New food</h2>
+@Html.ActionLink("Create New Food","Create")
+<h2>search Food</h2>
+<form method="get" action="">
+    <input type="text" name="Name"/>
+    <input type="submit" value="Search"/>
+</form>
+<table class="table table-condensed">
+    <tr>
+        <th>@Html.DisplayNameFor(x => x.Id)</th>
+        <th>@Html.DisplayNameFor(x => x.Name)</th>
+        <th>@Html.DisplayNameFor(x => x.Code)</th>
+        <th>@Html.DisplayNameFor(x => x.CaloriesPerKg)</th>
+        <th>Delete</th>
+        <th>Edit</th>
+    </tr>
+    @foreach(var F in Model)
+    {
+        <tr>
+            <td>@F.Id</td>
+            <td>@F.Name</td>
+            <td>@F.Code</td>
+            <td>@F.CaloriesPerKg</td>
+            <td>@Html.ActionLink("Delete Food", "Delete", new {id = F.Id})</td>
+            <td>@Html.ActionLink("Edit Food","Edit",new {id=F.Id})</td>
+        </tr>
+    }
+</table>
