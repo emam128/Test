@@ -11,7 +11,8 @@ namespace BeHealthy.Controllers
         {
             new Food {Id = 1, Name = "Banana", Code = "Ban-12", CaloriesPerKg = 120},
             new Food {Id = 2, Name = "Orange", Code = "ora-45", CaloriesPerKg = 56},
-            new Food {Id = 3, Name = "Lemon", Code = "lem-890", CaloriesPerKg = 30}
+            new Food {Id = 3, Name = "Lemon", Code = "lem-890", CaloriesPerKg = 30},
+            new Food {Id=4,Name ="apple",Code="app_123",CaloriesPerKg=10}
         };
         //
         // GET: /HealthyFood/
