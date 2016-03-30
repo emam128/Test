@@ -9,8 +9,8 @@ namespace BeHealthy.Controllers
     {
         public static List<Food> Foods = new List<Food>()
         {
-            new Food {Id = 1, Name = "Banana", Code = "Ban-12", CaloriesPerKg = 120},
-            new Food {Id = 2, Name = "Orange", Code = "ora-45", CaloriesPerKg = 56},
+            new Food {Id = 1, Name = "Banana", Code = "25", CaloriesPerKg = 254},
+            new Food {Id = 2, Name = "Orange", Code = "ora-80", CaloriesPerKg = 56},
             new Food {Id = 3, Name = "Lemon", Code = "lem-890", CaloriesPerKg = 30},
             new Food {Id=4,Name ="apple",Code="app_123",CaloriesPerKg=10}
         };
